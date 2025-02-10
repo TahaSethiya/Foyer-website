@@ -24,6 +24,7 @@ body {
 .subheading2{
     font-size: 15px;
     font-family: var(--primary-font);
+    align-items: center;
 }
 
 p{
@@ -70,7 +71,6 @@ p{
 @media (min-width: 993px) {
     body {
         font-size: 18px;
-        margin: 0 10% 0 10%;
     }
     .container {
         max-width: 1200px;
