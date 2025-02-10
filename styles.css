@@ -1,0 +1,75 @@
+/* styles.css */
+
+:root{
+    --primary-font: 'Roboto', sans-serif;
+    --background-color: #dde2c7;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0 25% 0 25%;
+    background-color: var(--background-color);
+}
+
+.header{
+    font-size: 25px;
+    font-family: var(--primary-font);
+}
+
+.subheading1{
+    font-size: 20px;
+    font-family: var(--primary-font);
+}
+
+.subheading2{
+    font-size: 15px;
+    font-family: var(--primary-font);
+}
+
+p{
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
+
+.photo-container {
+    width: 100%; /* Take full width of the parent (body) */
+    overflow: hidden; /* Prevents image from overflowing */
+}
+
+
+.photo-container img {
+    width: 100%; /* Image takes full width of container */
+    display: block; /* Prevents a small space below the image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 20px;
+    padding-bottom: 20px;
+    object-fit: contain;
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 993px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        max-width: 1200px;
+        padding: 30px;
+    }
+}
